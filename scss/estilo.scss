@@ -1,0 +1,45 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                   RESETEO                                  */
+/* -------------------------------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              PUNTO DE CONTROL                              */
+/* -------------------------------------------------------------------------- */
+
+/*General*/
+@import "./general/nav";
+@import "./general/footer";
+@import "./general/textos";
+@import "medias";
+
+
+
+
+/* PAGES */
+@import "./pages/index";
+@import "./pages/trakk";
+@import "./pages/trayectoria";
+@import "./pages/equipo";
+@import "./pages/contacto";
+
+
+
+
+
+
+
+
+
