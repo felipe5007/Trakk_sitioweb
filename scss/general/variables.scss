@@ -1,0 +1,15 @@
+$colorUno: #3ACF94;
+$colorDos: #F9C74F;
+$colorTres: #000000;
+
+@mixin contenedorA ($fondo) {
+    background-color: $fondo;
+    width: 200px;
+    height: 300px;
+    margin: 5px 10px;
+    padding: 10px;
+}
+
+.contenedorEquipo{
+    @include contenedorA ($colorDos);
+}
