@@ -1,107 +1,48 @@
-nav{
-    height: 80px;
-    width: 100%;
-a{
-    img{
-        width: 3rem;
+
+/* Variables */
+:root{
+    --header-height: 3rem;
+    --body-font: 'Montserrat', sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
     }
 }
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
 ul{
-    float: right;
-    margin-right: 20px;
-
-    li{
-        display: inline-block;
-        line-height: 80px;
-        margin: 0 5px;
-        a{
-            color: black;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 7px 13px;
-            border-radius: 3px;
-            text-transform: uppercase;
-        }
-        .active, :hover{
-            background-color: springgreen;
-            transition: .5s;
-        }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    a{
+        text-decoration: none;
     }
-}
-}
-.icon{
-    color: white;
-}
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
+    
 }
 
-.checkbtn{
-    font-size: 40px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
-#check{
-    display: none;
+.logo{
+    width: 3rem;
+}
+.header{
+
 }
 
 
 
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav{
-        ul{
-            li{
-                a{
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    nav{
-    ul{
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: #20c997;
-            top: 80px;
-            left: -200%;
-            text-align: center;
-            transition: all .5s;
-            
-            li{
-                display: block;
-                margin: 50px 0;
-                line-height: 30px;
-
-                a{
-                    font-size: 20px;
-
-                    :hover, :active{
-                        background: none;
-                        color: black;
-
-                    }
-                }
-
-            }
-        }
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
