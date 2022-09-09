@@ -33,33 +33,35 @@
     
 
 <body class="colorFondo">
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <img class="icon icons8-Menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAPFJREFUeF7tl8ENAzEIBI/OksqiVJZ0RjowSOFxy859DyE8LNgbl/kX5ue/AIACzAkwAuYCYAkyAoyAOQFGwFwA3AKMACNQEMjMVIYUEUeVlyMAABTACNjvgJf4Enyf6i+XoPLhO7UDoENpcwwK2NzdztlQQIfS5phSAZnp/Q7ADGGGMEP2ZuijfAtExBMzdCBQXoPK3e/UDoAOpc0xKGBzdztnQwEVpcx8VDF3/h8R37/eAZghzBBmyN4MeQO484afqI13wARF5RwoQLl7E7WjgAmKyjlQgHL3JmpHARMUlXOgAOXuTdSOAiYoKuewV8APrJZIQTOlAPYAAAAASUVORK5CYII=" width="64" height="64">
-            </label>
-            <a href="./index.html" class="enlace">
-                <img src="/img/general/logo/Logo-1.png" class="logo" alt="logo trakk">
-            </a>
-            <ul class="list">
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/pages/trakk.html">Sobre Trakk</a>
-                </li>
-                <li>
-                    <a href="/pages/trayectoria.html">Trayectoria</a>
-                        
+    <header class="header">
+        <a href="#" class="header_logo"><img src="./img/general/logo/Logo-1.png" class="logo" alt="Logo trakk" /></a>
+        <ion-icon name="menu-outline" class="header_toggle" id="nav-toggle"></ion-icon>
+        <nav class="nav" id="nav-menu">
+            <div class="nav_content bd-grid">
+                <ion-icon name="close-outline" class="nav_close" id="nav-close"></ion-icon>
+            </div>
+
+            <div class="nav_menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Index</a>
                     </li>
-                <li>
-                    <a href="/pages/equipo.html">Equipo</a>
-                </li>
-                <li><a class="active" href="/pages/contacto.html">Contacto</a></li>
-            </ul>
+                    <li class="nav-item">
+                        <a href="./pages/trakk.html" class="nav-link">Sobre TRAKK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/trayectoria.html" class="nav-link">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/equipo.html" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        </header>
+    </header>
 
     <div class="container forma">
         <div class="row formulario">
