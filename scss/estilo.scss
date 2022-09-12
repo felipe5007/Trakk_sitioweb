@@ -18,6 +18,8 @@
 @import "../scss/pdc/variables";
 @import "../scss/general/punto";
 @import "../scss/general/boton";
+@import "../scss/pdc/animate";
+
 
 /* -------------------------------------------------------------------------- */
 /*                                  SITIO WEB                                 */
@@ -35,6 +37,8 @@
  @import "../scss/pdc/medias";
 
 
+
+ 
 body{
     background-color: $color5;
     width: 100%;

@@ -110,7 +110,7 @@
         /* -------------------------------------------------------------------------- */
 
         header{
-            height: 70vh;
+            height: auto;
             margin-bottom: 4rem; 
         }
 
@@ -190,7 +190,7 @@
     }
 
     header{
-        height: 100vh;
+        height: auto;
     }
 
     .header__container{
@@ -206,7 +206,7 @@
     }
     
     .categories__right{
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 0.7rem;
         }
 
