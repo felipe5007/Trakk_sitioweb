@@ -25,7 +25,7 @@ footer{
     width: 50px;
     border-radius: 50px;
     border: 1px solid $color6;
-    background-image: url(/img/FacebookBlanco.png);
+    background-image: url(../img/FacebookBlanco.png);
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
@@ -36,10 +36,10 @@ footer{
     }
 
     &:nth-of-type(2){
-        background-image: url(/img/InstagramBlanco.png);
+        background-image: url(../img/InstagramBlanco.png);
     }
     &:nth-of-type(3){
-        background-image: url(/img/DiscordBlanco.png);
+        background-image: url(../img/DiscordBlanco.png);
     }
 
 }
