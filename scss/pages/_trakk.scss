@@ -1,75 +1,81 @@
-/* -------------------------------------------------------------------------- */
-/*                                    TRAKK                                   */
-/* -------------------------------------------------------------------------- */
-
-/* Plataformas dimensionales */
-
-@keyframes float {
-	0% {
-		
-		transform: translatey(0px);
-	}
-	50% {
-		
-		transform: translatey(-20px);
-	}
-	100% {
-
-		transform: translatey(0px);
-	}
-}
-
-.dimension {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: flex-end;
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-	img { width: 25%; height: auto; }
-    
-}
-
-
-/* Sobre Trakk */
-
-.sobreTrakk{
-    display: flex;
-    flex-direction: column;
+.categories{
+    height: 29rem;
     h1{
-        color: white;
-        text-decoration: solid;
-        margin: 1rem;
-        text-align: center;
-    }
-    h4{
-        margin: 2rem;
-        font-size: 30px;
-        text-align: center;
-        font-style: normal;
+        line-height: 1;
+        margin-bottom: 3rem;
     }
 }
-
-/* Titulo HALLAZGOS */
-
-.baseHallazgos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.categories__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
-
-/* Hallazgos */
-
-.hallazgos{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-shrink: 1;
+.categories__left{
+    margin-right: 4rem;
+    p{
+        margin: 1rem 0 3rem;
+    }
 }
 
-.mitos{
-    width: 1rem;
+.categories__right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
 }
 
+.category{
+    background: $color6;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+    
+    h5{
+        margin: 2rem 0 1rem;
+    }
 
+    p{
+        font-size: 0.85rem;
+    }
+
+    &:hover{
+        box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    &:nth-child(2){
+        .category__icon{
+        background: blue;
+    }
+}
+
+&:nth-child(3){
+    .category__icon{
+    background: red;
+}
+}
+
+&:nth-child(4){
+    .category__icon{
+    background: purple;
+}
+}
+
+&:nth-child(5){
+    .category__icon{
+    background: rgb(169, 124, 9);
+}
+}
+
+&:nth-child(6){
+    .category__icon{
+    background: rgb(31, 157, 167);
+}
+}
+}
+
+.category__icon{
+    background: green;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+
+}

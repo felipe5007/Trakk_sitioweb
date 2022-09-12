@@ -2,46 +2,53 @@
 /* -------------------------------------------------------------------------- */
 /*                                   RESETEO                                  */
 /* -------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
+/* -------------------------------------------------------------------------- */
+/*                             PUNTO DE CONTROL                           */
+/* -------------------------------------------------------------------------- */
+@import "../scss/pdc/paleta";
+@import "../scss/pdc/variables";
+@import "../scss/general/punto";
+@import "../scss/general/boton";
+
+/* -------------------------------------------------------------------------- */
+/*                                  SITIO WEB                                 */
+/* -------------------------------------------------------------------------- */
+@import "../scss/general/nav";
+@import "../scss/general/footer";
+/* -------------------------------------------------------------------------- */
+/*                                    PAGES                                   */
+/* -------------------------------------------------------------------------- */
+ @import "../scss/pages/index";
+ @import "../scss/pages/trakk";
+ @import "../scss/pages/equipo";
+ @import "../scss/pages/trayectoria";
+
+@import "../scss/pdc/medias";
+
 
 body{
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-    margin: var(--header-height) 0 0 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    font-weight: 500;
+    background-color: $color5;
+    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: var(--container-width--lg);
+    margin: 0 auto;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                              PUNTO DE CONTROL                              */
 /* -------------------------------------------------------------------------- */
-
-/*General*/
-@import "./general/nav";
-@import "./general/footer";
-@import "./general/textos";
-@import "medias";
-@import "./general/variables";
-
-
-
-/* PAGES */
-@import "./pages/index";
-@import "./pages/trakk";
-@import "./pages/trayectoria";
-@import "./pages/equipo";
-@import "./pages/contacto";
-
-
-
 
 
 

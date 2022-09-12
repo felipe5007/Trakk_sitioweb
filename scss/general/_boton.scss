@@ -1,0 +1,21 @@
+.btn{
+    display: inline-block;
+    background-color: $color6;
+    color: $color5;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+
+    &:hover{
+        background: transparent;
+        color: $color2;
+        border-color: $color6;
+    }
+}
+
+.btn-primary{
+    background: $color2;
+    color: $color3;
+}
+

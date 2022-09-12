@@ -8,24 +8,25 @@
         <meta name="description" content="Conversa con trakk">
         <meta name="keywords"  content="Trekking, app trekking, rutas offlines, senderismo">
         
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-<!-- GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <!-- GOOGLE FONTS-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+ <!-- BOOTSTRAP 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ 
+ 
 
 
-<!-- ICONO PAGINA-->
-<link rel="icon" href="/img/general/logo/Logo-1.ico">
-<!-- CSS ANIMACIÓN-->
-<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+   <!-- ICONO PAGINA-->
+   <link rel="icon" href="../img/logoIcon.ico"/>
+ <!-- ICONSCOUT CDN-->
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-<!-- CSS -->
-<link rel="stylesheet" href="../css/estilo.css">
 
-<!-- BOOTSTRAP-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <!-- CSS MANTENER ABAJO DE TITULO PAGINA -->
+ <link rel="stylesheet" href="../css/estilo.css" />
 
     <!-- TITULO PAGINA-->
         <title>TRAKK</title>
@@ -33,116 +34,27 @@
     
 
 <body>
-    <header class="header">
-        <a href="#" class="header_logo"><img src="./img/general/logo/Logo-1.png" class="logo" alt="Logo trakk" /></a>
-        <ion-icon name="menu-outline" class="header_toggle" id="nav-toggle"></ion-icon>
-        <nav class="nav" id="nav-menu">
-            <div class="nav_content bd-grid">
-                <ion-icon name="close-outline" class="nav_close" id="nav-close"></ion-icon>
-            </div>
 
-            <div class="nav_menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">Index</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/trakk.html" class="nav-link">Sobre TRAKK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/trayectoria.html" class="nav-link">Trayectoria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/equipo.html" class="nav-link">Equipo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/contacto.html" class="nav-link">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="container forma">
-        <div class="row formulario">
-            <div class="col-md-12">
-                <div class="well well-sm">
-                    <form class="form-horizontal" method="post">
-                        <fieldset>
-                            <legend class="text-center header">Conversa con trakk</legend>
-    
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="fname" name="name" type="text" placeholder="Primer Nombre" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
-                                </div>
-                            </div>
-    
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                                </div>
-                            </div>
-    
-    
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje." rows="7"></textarea>
-                                </div>
-                            </div>
-    
-                            <div class="form-group">
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
+<nav>
+        <div class="container nav__container">
+            <a href="index.html"><img src="../img/logoTitulo.png" class="logonav" width="100px" alt="Logo Nav"></a>
+            <ul class="nav__menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/trakk.html">About</a></li>
+                <li><a href="../pages/trayectoria.html">Trayectoria</a></li>
+                <li><a href="../pages/equipo.html">Equipo</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
-    </div>
+    </nav>
+
+    <!-- SCRIPTS FELIPE-->
+<script src="../js/main.js"></script>
     
-    <footer>
-        <div class="col-md-7 col-lg-8">
-        <p class="descripcion">Sitio web hecho por:
-            <a href="#" style="text-decoration: none;" ><strong class="text-white">Felipe Calvo</strong></a>
-        </p>
-    </div>
-        <div class="col-md-5 col-lg-4">
-            <div class="text-center text-md-right">
-            <ul class="list-unstyled list-inline">
-                <li class="list-inline-item list-inline">
-                    <a href="https://www.instagram.com/trakk_app/"> <img src="/img/general/rrss/instagram.png" class="rrss" alt=""></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.facebook.com/TRAKK-104513521442820"><img src="/img/general/rrss/facebook.png"  class="rrss" alt=""></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://t.me/Trakk_red"><img src="/img/general/rrss/telegram.png" class="rrss" alt=""></a>
-                </li>
-            </ul></div>
-        
-        </div>
-    </footer>
-
-
-    <!-- SCRIPTS-->
-    <script src="./js/animacion.js"></script>
-    <!-- Animaciones -->
-    <script src="js/wow.min.js"> </script>
-    <script> new WOW().init(); </script>
-
-<!-- BOOTSTRAP-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- BOOTSTRAP 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
 

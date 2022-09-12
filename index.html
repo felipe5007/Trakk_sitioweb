@@ -11,81 +11,71 @@
     <meta name="keywords" content="Trekking, app trekking, rutas offlines, senderismo" />
 
     <!-- GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ 
+     <!-- BOOTSTRAP 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ 
+ 
 
     <!-- ICONO PAGINA-->
-    <link rel="icon" href="./img/general/logo/Logo-1.ico" />
-    <!-- CSS ANIMACIÓN-->
-    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css" />
+    <link rel="icon" href="./img/logoIcon.ico"/>
 
-    <!-- BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css" />
 
     <!-- TITULO PAGINA-->
     <title>TRAKK</title>
+
 </head>
-
 <body>
-    <header class="header">
-        <a href="#" class="header_logo"><img src="./img/general/logo/Logo-1.png" class="logo" alt="Logo trakk" /></a>
-        <ion-icon name="menu-outline" class="header_toggle" id="nav-toggle"></ion-icon>
-        <nav class="nav" id="nav-menu">
-            <div class="nav_content bd-grid">
-                <ion-icon name="close-outline" class="nav_close" id="nav-close"></ion-icon>
-            </div>
+<nav>
+    <div class="container nav__container">
+        <a href="index.html"><img src="./img/logoTitulo.png" class="logonav" width="100px" alt="Logo Nav"></a>
+        <ul class="nav__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/trakk.html">About</a></li>
+            <li><a href="./pages/trayectoria.html">Trayectoria</a></li>
+            <li><a href="./pages/equipo.html">Equipo</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+</nav>
 
-            <div class="nav_menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">Index</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/trakk.html" class="nav-link">Sobre TRAKK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/trayectoria.html" class="nav-link">Trayectoria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/equipo.html" class="nav-link">Equipo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./pages/contacto.html" class="nav-link">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="portada">
-            <h2 class="text-animate">
-                Preparate para una aventura
-                <div class="mask">
-                    <span data-show>interactiva</span>
-                    <span>accesible</span>
-                    <span>comunitaria</span>
-                    <span>gamificada</span>
-                </div>
-            </h2>
-            <img src="./img/pagina1/3D.png" alt="3D IMG" class="img3d" />
+<header>
+    <div class="container header__container">
+        <div class="header__left">
+            <h1>Bienvenido a una aventura interactiva</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque sed maxime sunt eveniet debitis error cupiditate, deleniti praesentium est velit!</p>
+            <a href="#" class="btn btn-primary">Comenzar</a>
         </div>
-    </main>
+        
+        <div class="header__right">
+            <div class="header__right-image">
+                <img src="./img/3d.png" class="img3d" alt="">
+            </div>
+        </div>
+    </div>
+</header>
 
-    <footer>
-        <h6>Sitio creado por Nobody</h6>
-        <a href="https://www.facebook.com/TRAKK-104513521442820" class="fa-brands fa-facebook"></a>
-        <a href="https://www.instagram.com/trakk_app/" class="fa-brands fa-instagram"></a>
-        <a href="" class="fa-brands fa-discord"></a>
-    </footer>
+
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 SCRIPTS                                 -->
     <!-- ----------------------------------------------------------------------- -->
+
+<!-- SCRIPTS FELIPE-->
+<script src="./js/main.js"></script>
+
+
+
     <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -96,14 +86,14 @@
     <script>
         new WOW().init();
     </script>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- FONT AWESOME-->
-    <script src="https://kit.fontawesome.com/955ea8d662.js" crossorigin="anonymous"></script>
 
-    <!-- BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+
+<!-- BOOTSTRAP 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
