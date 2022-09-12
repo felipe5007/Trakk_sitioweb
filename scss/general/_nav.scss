@@ -5,7 +5,6 @@
 nav{
     width: 100vw;
     height: 5rem;
-    position: fixed;
     top: 0;
     z-index: 11;
 
@@ -37,10 +36,7 @@ nav{
     }
 }
 
-.window-scroll{
-    background: $color5;
-    box-shadow:  0 1rem 2rem rgba(0, 0, 0, 0.3);
-}
+
 
 
 

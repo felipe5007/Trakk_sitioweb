@@ -1,0 +1,52 @@
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 8%;
+    background: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid $color6;
+    background-image: url(/img/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+
+    &:hover{
+        background-color: $color5;
+    }
+
+    &:nth-of-type(2){
+        background-image: url(/img/InstagramBlanco.png);
+    }
+    &:nth-of-type(3){
+        background-image: url(/img/DiscordBlanco.png);
+    }
+
+}
+
+
+.copyright{
+    color: $color6;
+    font-weight: bold;
+    text-align: center;
+}
